@@ -99,6 +99,8 @@ print(dens_crt,vp=viewport(x=0.8, y=0.7, w=0.4, h=0.2))
 
 #####This is just rough draft code that I was playing with in attempt to solve the above.. 
 #just keeping this scratchwork for my own record 
+
+## Prof G: Script failed here because the layout is invalid.
 viewport(layout = 3,
          layout.pos.row = NULL, layout.pos.col = NULL,
          name = NULL)

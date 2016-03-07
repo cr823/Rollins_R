@@ -101,7 +101,9 @@ yindex$ix
 #sorts yVec values >600 (i.e. a from 7a) in order (lowest-highest) and indexes
 #$x are the values and $ix are the index positions of the values of a
 
-#c
+
+## Prof G: Not quite. Should use yVec indecies. If you had not set the
+##         seed, then the x and y vectors would be different.
 b<- xVec[xVec > 600] #will show all values greater than 600 in xVector
 xindex<-sort(a,index.return=1:250)
 #sorts xVec values >600 (i.e. b) in order (lowest-highest) and indexes
@@ -130,7 +132,7 @@ e1<-length(e[e >= 797]) #length will count all the values of e that are >= 797
 e1 #57 values
 
 #f
-
+## Prof G: Same issue
 f<-length(xVec[xVec %% 2==0]) 
 #length counts all values in xVec that are divisible by 2
 #That is, %% 2==0 will return all values that have a remainder of 0 when divided by 2
